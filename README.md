@@ -2,7 +2,9 @@
 
 Copyright (c) 2012 VMware, Inc
 
-`node-activities-boilerplate` is a fork of [node-express-boilerplate](https://github.com/mape/node-express-boilerplate) which is a simple express boilerplate app which does SSO using `Facebook`, `Twitter` and `GitHub`
+`paulwoodiii/node-activities-boilerplate` is a fork of [node-activities-boilerplate](https://github.com/ciberch/node-activities-boilerplate)
+
+`node-activities-boilerplate` is a fork of [node-express-boilerplate](https://github.com/mape/node-express-boilerplate) which is a simple express boilerplate app which does SSO using `Facebook`, and `GitHub`
 
 Instead of raw messaging back and forth between clients and server, `node-activities-boilerplate` uses [activitystrea.ms](http://activitystrea.ms/) to send well structured messages(activities) and
 aggregate them in an Activities MongoDB collection. It also uses Redis' PubSub to notify clients in real time of what changes are happening in the db and has client side logic to update the UI appropriately.
@@ -29,8 +31,14 @@ This functionality is delivered via the package [activity-streams-mongoose](http
 
 ## Install on dev machine
 
+Dependancies
+
+* mongodb
+* redis
+* imagemagick
+
 ``` bash
-git clone https://github.com/mape/node-express-boilerplate <myproject>
+git clone https://github.com/paulwoodiii/node-activities-boilerplate <myproject>
 cd <myproject>
 npm install
 ```
@@ -59,13 +67,8 @@ sudo gem install vmc --pre
 ```
 
 ## Get keys for all social networks and services
-### Build your Facebook App at
-- https://developers.facebook.com/apps
-- Add your app url to the Facebook App Domain list
-
-### Build your Twitter App at
-- https://dev.twitter.com/apps/new
-- Use callback url http://your-app-name.cloudfoundry.com/auth/twitter/callback
+### Build your Weibo App at
+- https://open.weibo.com
 
 ### Build Github App at
 - https://github.com/settings/applications/new
@@ -78,11 +81,9 @@ export APP_NAME=<your_name>
 vmc env-add $APP_NAME airbrake_api_key=your_key
 vmc env-add $APP_NAME github_client_id=github_id
 vmc env-add $APP_NAME github_client_secret=github_secret
-vmc env-add $APP_NAME facebook_app_id=fb_id
-vmc env-add $APP_NAME facebook_app_secret=fb_secret
+vmc env-add $APP_NAME weibo_app_id=fb_id
+vmc env-add $APP_NAME weibo_app_secret=fb_secret
 vmc env-add $APP_NAME NODE_ENV=production
-vmc env-add $APP_NAME twitter_consumer_key=twitter_key
-vmc env-add $APP_NAME twitter_consumer_secret=twitter_secret
 vmc env-add $APP_NAME TMP=tmp
 ```
 

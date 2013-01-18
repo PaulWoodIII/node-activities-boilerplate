@@ -1,15 +1,15 @@
 var cf = require('cloudfoundry');
 var settings = {
-    'user_email' : 'mwilkinson@vmware.com',
+    'user_email' : 'paul@paulwoodware.com',
     'user' : {
-        'name' : 'Monica Wilkinson',
-        'website' : 'http://ciberch.cloudfoundry.com'
+        'name' : 'Paul Wood',
+        'website' : 'http://paulwoodiii.com'
     },
 	'sessionSecret': 'sessionSecret'
     , 'internal_host' : '127.0.0.1'
     , 'internal_port' : 8080
 	, 'port': 8080
-	, 'uri': 'http://moni-air.local:8080' // Without trailing /
+	, 'uri': 'http://www.WKCatalog.com' // Without trailing /
     , 'redisOptions': {host: '127.0.0.1', port: 6379}
     , 'mongoUrl': 'mongodb://localhost/mongodb-asms'
 	// You can add multiple recipients for notifo notifications
@@ -23,17 +23,13 @@ var settings = {
 
 	// Enter API keys to enable auth services, remove entire object if they aren't used.
 	, 'external': {
-		'facebook': {
-			appId: process.env.facebook_app_id,
-			appSecret: process.env.facebook_app_secret
-		}
-		, 'twitter': {
-			consumerKey: process.env.twitter_consumer_key,
-			consumerSecret: process.env.twitter_consumer_secret
+		'weibo': {
+			appId:process.env.weibo_app_id,
+			appSecret:process.env.weibo_app_secret
 		}
 		, 'github': {
-			appId: process.env.github_client_id,
-			appSecret: process.env.github_client_secret
+			appId:process.env.github_client_id,
+			appSecret:process.env.github_client_secret
 		}
 	}
 

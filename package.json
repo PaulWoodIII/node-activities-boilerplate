@@ -1,35 +1,38 @@
 {
-  "name" : "node-activities-boilerplate",
-  "description" : "A Real-time boilerplate Activity Stream Engine with support for photo manipulations",
-  "version" : "0.0.7",
-  "author" : "Monica Wilkinson <ciberch@gmail.com>",
-  "engines" : ["node"],
-  "repository" : { "type":"git", "url":"http://github.com/ciberch/node-express-boilerplate" },
+	"name": "node-activities-boilerplate",
+	"description": "Post Crap",
+	"version": "0.0.1",
+	"author": "Paul Wood <zxcvzxcv@gmail.com>",
+	"engines": ["node"],
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/paulwoodiii/node-express-boilerplate"
+	},
 	"scripts": {
-	    "test": "make test"
-	  },
-  "dependencies" : {
-    "connect" : "1.x",
-    "connect-assetmanager" : ">=0.0.21",
-    "connect-assetmanager-handlers" : ">=0.0.17",
-    "jade": "",
-    "express" : "2.x",
-    "socket.io" : ">=0.7.8",
-    "connect-redis" : ">=1.0.7",
-    "connect-notifo" : ">=0.0.1",
-    "airbrake" : ">=0.2.0",
-    "everyauth" : "0.3.x",
-    "cloudfoundry" : ">=0.1.0",
-    "activity-streams-mongoose": "0.1.2",
-	  "hiredis": "",
-	  "underscore": "",
-	  "mongoose-auth" : ">= 0.0.12",
-	  "guid" : "",
-	  "imagemagick" : "",
-	  "mongoose": "3.x",
-	  "mocha" : "1.4.1",
-	  "should" : "1.1.0",
-	  "clientjade" : ""
+		"test": "make test"
+	},
+	"dependencies": {
+		"connect": "1.x",
+		"connect-assetmanager": ">=0.0.21",
+		"connect-assetmanager-handlers": ">=0.0.17",
+		"jade": "",
+		"express": "2.x",
+		"socket.io": ">=0.7.8",
+		"connect-redis": ">=1.0.7",
+		"connect-notifo": ">=0.0.1",
+		"airbrake": ">=0.2.0",
+		"everyauth": "0.3.x",
+		"cloudfoundry": ">=0.1.0",
+		"activity-streams-mongoose": "0.1.2",
+		"hiredis": "",
+		"underscore": "",
+		"mongoose-auth": ">= 0.0.12",
+		"guid": "",
+		"imagemagick": "",
+		"mongoose": "3.x",
+		"mocha": "1.4.1",
+		"should": "1.1.0",
+		"clientjade": ""
 
-  }
+	}
 }
